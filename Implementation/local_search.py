@@ -114,7 +114,7 @@ class TabuSearch(LocalSearchBase):
         steps = 0
         while steps < 1000 and self.evaluation_counter < self.max_evaluations:
             neighbor = self.mutate(self.current_solution)
-            # Generate a key for the neighbor (e.g., hash of the solution)
+            # Generate a key for the neighbor (e.g., tuple of the solution)
             neighbor_key = tuple(neighbor.tolist())
             if neighbor_key in self.tabu_list:
                 # Skip this neighbor if it's in the tabu list
@@ -178,6 +178,7 @@ class SimulatedAnnealing(LocalSearchBase):
             steps += 1
 
             # Compute the difference in objectives (aggregate difference)
+            # This is a simplistic approach; consider a better aggregation for multi-objective
             delta = sum([n - c for n, c in zip(neighbor_obj, self.current_obj)])
 
             if delta < 0 or np.random.rand() < self.acceptance_probability(delta):
