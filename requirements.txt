@@ -1,0 +1,4 @@
+# requirements.txt
+
+tensorflow>=2.4.0
+numpy
