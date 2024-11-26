@@ -262,19 +262,5 @@ Please ensure your code adheres to the project's coding standards and includes p
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Quick Links
-
-- [Project Repository](https://github.com/yourusername/Eval-LocalSearch)
-- [Issues](https://github.com/yourusername/Eval-LocalSearch/issues)
-- [Pull Requests](https://github.com/yourusername/Eval-LocalSearch/pulls)
-
----
-
-Thank you for your interest in Eval-LocalSearch!
+Thank you for your interest in Local Search!
 ```
