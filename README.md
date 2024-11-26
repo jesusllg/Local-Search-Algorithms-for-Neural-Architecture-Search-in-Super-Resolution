@@ -1,32 +1,5 @@
 # Evaluation and Local Search Algorithms for Neural Architecture Search in Super Resolution
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Performance Comparison](#performance-comparison)
-- [How It Works](#how-it-works)
-  - [Integration with Search Spaces](#integration-with-search-spaces)
-  - [Evaluation Metrics](#evaluation-metrics)
-  - [Optimization Process](#optimization-process)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Configuration](#configuration)
-  - [Running the Algorithms](#running-the-algorithms)
-    - [Implementing `decode` and `get_model`](#implementing-decode-and-get_model)
-- [Algorithms Implemented](#algorithms-implemented)
-  - [Local Search Methods](#local-search-methods)
-    - [Hill Climbing](#hill-climbing)
-    - [Tabu Search](#tabu-search)
-    - [Simulated Annealing](#simulated-annealing)
-- [Research Publications](#research-publications)
-- [Contributing](#contributing)
-- [License](#license)
-- [Quick Links](#quick-links)
-
----
-
 ## Introduction
 
 **Eval-LocalSearch** provides a suite of evaluation functions and local search algorithms designed for Neural Architecture Search (NAS). This repository is flexible and can be integrated with any search space as long as it uses a binary encoding.
