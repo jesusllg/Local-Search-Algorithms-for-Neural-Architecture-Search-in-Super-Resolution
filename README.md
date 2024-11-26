@@ -1,4 +1,4 @@
-# Evaluation and Local Search Algorithms for Neural Architecture Search in Super Resolution
+# Local Search Algorithms for Neural Architecture Search in Super Resolution
 
 ## Introduction
 
