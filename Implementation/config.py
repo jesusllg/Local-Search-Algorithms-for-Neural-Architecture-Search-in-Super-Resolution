@@ -23,15 +23,21 @@ LOCAL_SEARCH_CONFIG = {
 
 # Dataset Configuration
 # Replace with your actual datasets
-# Example placeholders (users should replace these with actual data)
-# For PSNR evaluation, datasets are required for training and validation
-train_images = np.random.rand(100, 64, 64, 3)  # Placeholder: Replace with actual training images
-train_labels = np.random.rand(100, 64, 64, 3)  # Placeholder: Replace with actual training labels
-val_images = np.random.rand(20, 64, 64, 3)     # Placeholder: Replace with actual validation images
-val_labels = np.random.rand(20, 64, 64, 3)     # Placeholder: Replace with actual validation labels
+# Ensure that train_images, train_labels, val_images, and val_labels are defined
+# For example:
+# train_images = ...
+# train_labels = ...
+# val_images = ...
+# val_labels = ...
 
+# Uncomment and replace with actual data
+# DATASET_TRAIN = tf.data.Dataset.from_tensor_slices((train_images, train_labels)).batch(32)
+# DATASET_VAL = tf.data.Dataset.from_tensor_slices((val_images, val_labels)).batch(32)
+
+# For demonstration purposes, we'll leave these as placeholders
 DATASET_TRAIN = tf.data.Dataset.from_tensor_slices((train_images, train_labels)).batch(32)
 DATASET_VAL = tf.data.Dataset.from_tensor_slices((val_images, val_labels)).batch(32)
+
 EPOCHS = 5  # Number of epochs for training when using PSNR
 
 # Device Configuration
